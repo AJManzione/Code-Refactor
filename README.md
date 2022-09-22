@@ -57,6 +57,21 @@
 
 ## Dynamic navigation bar!
 
-### Additionally we changed the way the navigation bar works when scrolling through the webpage so that is follows the user down the page, so that at any time they can access the buttons within it.
+### Additionally we changed the way the navigation bar works when scrolling through the webpage so that is follows the user down the page, so that at any time they can access the features within the nav bar!
+
+### Built With
+
+* HTML
+* CSS
+* Git & GitHub
+
+
+<!-- CONTACT -->
+## Contact
+
+Anthony Manzione - [@Instagram Handle](https://www.instagram.com/anthony.manzione/) - 
+[@Linkedin](https://www.linkedin.com/in/anthony-manzione-862b44250/)
+
+Project Link: [https://github.com/AJManzione/Code-refactor](https://github.com/AJManzione/Code-refactor)
 
 
