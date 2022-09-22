@@ -1,62 +1,64 @@
+/* Universal selector selects everything on the page until otherwise specifically defined */
 * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* styles the body until otherwise specifically changed */
 body {
     background-color: #d9dcd6;
 }
 
+/* styles everything withing the header */
 .header {
     width: 100%;
     padding: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-}
-ul {
+    position: fixed;
+    font-size: 16px;
     display: inline-block;
-    margin-left: 11em;
 }
+
+/* grabs all the list items in the .header */
+.header ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30em;
+}
+
+/* grabs all the h1 elements in the .header */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* used to style just the "seo" section of the logo, replaced "span" */
 mark {
     background-color: #2a607c ;
-}
-
-.header h1 .seo {
     color: #d9dcd6;
 }
 
-.header  {
-    width: 100%;
-    padding-top: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-}
-
-.header ul {
-    list-style-type: none;
-}
-
+/* list items found inside of the unordered list found inside of the .header class recieve this styling */
 .header ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* all "a" elements recieve this styling */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* all paragraph elements recieve this styling */
 p {
     font-size: 16px;
 }
 
+/* the hero class has a defined background image and qualities found here */
 .hero {
     height: 800px;
     width: 100%;
@@ -66,22 +68,26 @@ p {
     background-position: center;
 }
 
+/* the class called float-left is styled here */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* the class called float-right is styled here */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* the class called content gets styled here */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* styles everythin within the benefits class until otherwise specified */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -89,10 +95,11 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
+
+/* more specificity of styling children elements */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -108,78 +115,9 @@ p {
     color: #ffffff;
 }
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
+/* styles the h2 elements specifically within their given parent's class names */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -195,6 +133,77 @@ p {
     font-size: 36px;
 }
 
+
+
+/* styles the h3 elements specifically within their given parent's class names */
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+/* styles all the img elements within the .benefits class */
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+
+/* more specificity of styling children elements */
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+/*styles images that are children of their specific parent clssses */
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+
+
+/*styles the footer */
 .footer {
     padding: 30px;
     clear: both;
@@ -202,6 +211,8 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/* specifically styles the h4 within the footer */
+.footer h4 {
     font-size: 20px;
 }
+
