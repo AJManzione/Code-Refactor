@@ -25,8 +25,9 @@ body {
 /* grabs all the list items in the .header */
 .header ul {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
     margin-left: 30em;
+    flex-direction: row;
 }
 
 /* grabs all the h1 elements in the .header */

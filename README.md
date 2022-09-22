@@ -1,5 +1,7 @@
 # Horiseon Code-Refactoring!
 
+[Deployed Site](https://ajmanzione.github.io/Code-refactor/)
+
 ## Correcting pre-written code and adding semantic HTML and CSS for accessibility and SEO purposes
 
 ### There were many things semantically incorrect with the way Horiseon's website was launched, sure it looked pretty and to the average user there may be no visual issues. However, when semantic HTML is **not** used when building a website and syntax primarily only consists of **div** classes, there is an inate problem with this process that involves **limiting users** and not allowing users who may have a disibility to view the website. Screen readers are commonly used by people who have visual disabilities and when HTML is writtin insemanticly, then screen readers cannot process this information.
